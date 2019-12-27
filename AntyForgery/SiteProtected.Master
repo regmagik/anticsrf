@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteProtected.Master.cs" Inherits="AntyForgery.SiteProtectedMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Welcome ASP.NET App</title>
+</head>
+<body>
+    <h1>Protected via Master Page</h1>
+    <a href="/">Home</a> | <a href="/About.aspx">About</a> 
+    <hr />
+    <form runat="server">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

